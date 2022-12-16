@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: #0d5825;
+    width: 500px;
+    height: 500px;
+    font-size: 25px;
+}
+
+.box .quote {
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+    left: 18px;
+}
+
+.box .author {
+    color: white;
+    font-style: italic;
+    position: relative;
+    top: 28px;
+    left: 135px;
+}
+
+.box .card1 {
+    width: 150px;
+    position: relative;
+    top: 145px;
+    left: 114px;
+    transform: rotate(-20deg);
+    transition: 1s ease-in-out;
+}
+
+.box .card1:hover {
+    top: 90px;
+}
+
+.box .card2 {
+    width: 150px;
+    position: relative;
+    top: 150px;
+    transform: rotate(-10deg);
+    transition: 1s ease-in-out;
+}
+
+.box .card2:hover{
+    top: 90px;
+}
+
+.box .card3 {
+    width: 150px;
+    position: relative;
+    top: 165px;
+    right: 101px;
+    transform: rotate(10deg);
+    transition: 1s ease-in-out;
+}
+
+.box .card3:hover {
+    top: 90px;
+}
+
+.squares {
+    position: relative;
+    top: 50px;
+    left: 25px
+}
+
+.squares .red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 15px
+}
+
+.squares .blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 75px;
+    top: 60px;
+    z-index: 1;
+}
+
+.squares .green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    top: 120px;
+    left: 135px;
+}
+
+.animation {
+    margin-top: 300px;
+    height: 400px;
+    width: 400px;
+}
+
+@keyframes qube {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:green; left:200px; top:200px;}
+    75%  {background-color:blue; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: qube;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+

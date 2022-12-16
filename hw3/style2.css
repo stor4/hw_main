@@ -1,0 +1,40 @@
+
+
+body .fish {
+    box-sizing: border-box;
+    margin: 10px 0 20px 30px;
+    padding: 10px 20px;
+    border: 5px solid red;
+}
+
+body .fish2 {
+	box-sizing: border-box;
+	width: 350px;
+	height: 220px;
+	padding: 15px 10px 20px;
+	margin-bottom: 30px;
+	border: dashed 2px red;
+	background: green;
+}
+
+body .text {
+	box-sizing: border-box;
+	width: 450px;
+	height: 220px;
+	margin: 15px;
+	text-align: justify;
+}
+
+body .text .img1 {
+	float: left;
+	width: 120px;
+	height: 70px;
+	margin: 15px 15px 11px 0;
+}
+
+body .text .img2 {
+	float: right;
+	width: 120px;
+	height: 70px;
+	margin: 15px 15px 15px 7px;
+}

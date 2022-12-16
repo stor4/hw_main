@@ -1,0 +1,37 @@
+* { 
+    color: green;      
+} 
+
+.holder a[href^="https"] {
+    color: red;
+}
+
+
+.holder .list > li:last-child a {
+    background-color: green;
+} 
+
+.holder .list + p {
+    font-size: 24px;
+}
+
+.text-box h3:first-child {
+    color: pink;
+}
+
+.text-box #greycol {
+    color: grey;
+}
+
+.text-box div p:only-child {
+    color: red;
+}
+
+.text-box :nth-last-child(2) {
+    color: green;
+}
+
+.text-box .yellow {
+    color: yellow;
+}
+
